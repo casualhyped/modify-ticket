@@ -11,7 +11,7 @@
 chrome.webRequest.onBeforeRequest.addListener(
   function(details) {
       if( details.url == "https://www.supremenewyork.com/ticket.js" )
-          return {redirectUrl: "https://cdn.discordapp.com/attachments/609199027669696535/784829613763067915/ticket.js" };
+          return {redirectUrl: "MODIFIED TICKET HERE" };
   },
   {urls: ["*://www.supremenewyork.com/*.js"]},
   ["blocking"]);
