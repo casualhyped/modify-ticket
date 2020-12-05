@@ -1,0 +1,27 @@
+{
+    "name": "Modify Ticket by casualhyped",
+    "version": "1.0",
+    "description": "Bypass Supremes debugging protection.",
+    "permissions": [
+      "webRequest",
+      "webRequestBlocking",
+      "https://www.supremenewyork.com/"
+  ],
+    "browser_action": {
+      "default_icon": "casual.png",
+      "default_popup": "popup.html",
+      "default_title": "A popup will come here"
+    },
+    "content_scripts": [
+        {
+          "matches": [
+            "<all_urls>"
+          ],
+          "js": ["content.js"]
+        }
+    ],
+    "manifest_version": 2,
+    "background": {
+      "scripts": ["background.js"]
+  }
+}
